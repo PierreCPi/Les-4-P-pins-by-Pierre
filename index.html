@@ -5,6 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Site Vitrine</title>
 </head>
+    <style><style>
+    /* Palette de couleurs */
+    :root {
+        --couleur-principale: #A8D5BA; /* Vert doux */
+        --couleur-secondaire: #6BBF59; /* Vert mousse */
+        --couleur-accent: #F7E8A4;     /* Jaune pâle */
+        --fond-clair: #F8F8F8;         /* Blanc cassé */
+        --fond-gris: #D4E6F1;          /* Gris doux */
+    }
+
+    /* Styles généraux */
+    body {
+        background-color: var(--fond-clair);
+        color: var(--couleur-principale);
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: var(--couleur-principale);
+        color: var(--fond-clair);
+        padding: 20px;
+        text-align: center;
+    }
+
+    footer {
+        background-color: var(--couleur-secondaire);
+        color: var(--fond-clair);
+        text-align: center;
+        padding: 10px;
+    }
+
+    a {
+        color: var(--couleur-accent);
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: var(--couleur-secondaire);
+    }
+
+    /* Sections spécifiques */
+    section {
+        background-color: var(--fond-gris);
+        margin: 20px;
+        padding: 15px;
+        border-radius: 8px;
+    }
+</style>
+
+    body {
+        background-color: #f0f0f0; /* Remplace #f0f0f0 par la couleur souhaitée */
+        margin: 0;
+        font-family: Arial, sans-serif; /* Optionnel, pour améliorer la police */
+    }
+</style>
+
+<footer style="text-align: center; margin-top: 20px; padding: 10px; background-color: #f9f9f9;">
+    <a href="https://instagram.com/pier_cernoia" target="_blank" style="text-decoration: none;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022_black.svg" 
+             alt="Instagram Logo" 
+             style="width: 50px; height: 50px;">
+    </a>
+    <p style="margin-top: 10px; font-size: 14px; color: #333;">Suivez-moi sur Instagram</p>
+</footer>
 <body>
     <header>
         <h1>Bienvenue sur mon site vitrine</h1>
@@ -26,21 +92,7 @@
             <h2>Contact</h2>
             <section>
     <h2>Contact</h2>
-    <form action="https://formspree.io/f/XXXXXXXX" method="POST">
-        <label for="name">Nom :</label>
-        <input type="text" id="name" name="name" placeholder="Votre nom" required>
-        
-        <label for="email">Email :</label>
-        <input type="email" id="email" name="email" placeholder="Votre email" required>
-        
-        <label for="message">Message :</label>
-        <textarea id="message" name="message" placeholder="Votre message" rows="5" required></textarea>
-        
-        <button type="submit">Envoyer</button>
-    </form>
-</section>
-
-            <p>Email : contact@monsite.com</p>
+    <p>Email : contact@monsite.com</p>
         </section>
     </main>
     <footer>
