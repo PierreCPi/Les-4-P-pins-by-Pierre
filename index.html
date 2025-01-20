@@ -1,40 +1,30 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Site Vitrine</title>
+    
+    <!-- Import de la police via Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
     <style>
-        @font-face {
-    font-family: 'Oswald';
-    src: url('fonts/Oswald-VariableFont_wght.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* Utiliser Oswald sur le site */
-body {
-    font-family: 'Oswald', Arial, sans-serif;
-}
-
         /* Palette de couleurs */
-       :root {
-    --couleur-principale: #8B5E3C; /* Marron doux */
-    --couleur-secondaire: #F5E9DA; /* Beige clair */
-    --couleur-accent: #D4A373;     /* Ocre */
-    --fond-clair: #FAF3E0;         /* Beige très clair */
-    --fond-gris: #A68A79;          /* Marron gris */
-}
-
+        :root {
+            --couleur-principale: #8B5E3C; /* Marron doux */
+            --couleur-secondaire: #F5E9DA; /* Beige clair */
+            --couleur-accent: #D4A373;     /* Ocre */
+            --fond-clair: #FAF3E0;         /* Beige très clair */
+            --fond-gris: #A68A79;          /* Marron gris */
+        }
 
         /* Styles généraux */
         body {
             background-color: var(--fond-clair);
             color: var(--couleur-principale);
-            font-family: 'Arial', sans-serif;
+            font-family: 'Oswald', Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
@@ -48,9 +38,15 @@ body {
 
         footer {
             background-color: var(--couleur-secondaire);
-            color: var(--fond-clair);
+            color: var(--couleur-principale);
             text-align: center;
             padding: 10px;
+        }
+
+        h1, h2 {
+            font-family: 'Oswald', sans-serif;
+            font-weight: 600;
+            color: var(--couleur-principale);
         }
 
         a {
@@ -62,12 +58,12 @@ body {
             color: var(--couleur-secondaire);
         }
 
-        /* Sections spécifiques */
         section {
             background-color: var(--fond-gris);
             margin: 20px;
             padding: 15px;
             border-radius: 8px;
+            color: var(--fond-clair);
         }
 
         /* Instagram footer spécifique */
@@ -75,7 +71,7 @@ body {
             text-align: center;
             margin-top: 20px;
             padding: 10px;
-            background-color: #f9f9f9;
+            background-color: var(--fond-clair);
         }
 
         .instagram-footer img {
@@ -86,60 +82,35 @@ body {
         .instagram-footer p {
             margin-top: 10px;
             font-size: 14px;
-            color: #333;
+            color: var(--couleur-principale);
         }
     </style>
 </head>
-body {
-    background-color: var(--fond-clair);
-    color: var(--couleur-principale);
-    font-family: 'Oswald', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: var(--couleur-principale);
-    color: var(--fond-clair);
-    padding: 20px;
-    text-align: center;
-}
-
-footer {
-    background-color: var(--couleur-secondaire);
-    color: var(--couleur-principale);
-    text-align: center;
-    padding: 10px;
-}
-
-h1, h2 {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 600;
-    color: var(--couleur-principale);
-}
-
-a {
-    color: var(--couleur-accent);
-    text-decoration: none;
-}
-
-a:hover {
-    color: var(--couleur-secondaire);
-}
-
-section {
-    background-color: var(--fond-gris);
-    margin: 20px;
-    padding: 15px;
-    border-radius: 8px;
-    color: var(--fond-clair);
-}
-l : contact@monsite.com</p>
+<body>
+    <header>
+        <h1>Bienvenue sur mon site vitrine</h1>
+    </header>
+    <main>
+        <section>
+            <h2>À propos</h2>
+            <p>Bienvenue sur mon site, créé pour toucher une nouvelle clientèle. Découvrez mes services et contactez-moi.</p>
+        </section>
+        <section>
+            <h2>Services</h2>
+            <ul>
+                <li>Service 1</li>
+                <li>Service 2</li>
+                <li>Service 3</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Contact</h2>
+            <p>Email : contact@monsite.com</p>
         </section>
     </main>
     <footer>
         <div class="instagram-footer">
-            <a href="https://instagram.com/pier_cernoia" target="_blank" style="text-decoration: none;">
+            <a href="https://instagram.com/pier_cernoia" target="_blank">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022_black.svg" 
                      alt="Instagram Logo">
             </a>
@@ -149,4 +120,3 @@ l : contact@monsite.com</p>
     </footer>
 </body>
 </html>
-
